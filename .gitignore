@@ -1,0 +1,49 @@
+
+# Python
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+*.pdb
+
+# Virtual environment
+.myvenv/
+.venv/
+venv/
+eenv/
+myvenv/
+
+# Environment variables
+*.env
+.env.*
+
+# FastAPI / Uvicorn
+*.log
+
+# Cache & build
+.cache/
+dist/
+build/
+*.egg-info/
+
+# IDE
+.vscode/
+.idea/
+
+# Models / embeddings / vector stores
+models/
+checkpoints/
+data/
+*.bin
+*.pt
+*.pth
+
+# LangChain / LLM artifacts
+*.db
+*.sqlite
+chroma/
+faiss_index/
+
+# OS files
+.DS_Store
+Thumbs.db

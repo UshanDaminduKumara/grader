@@ -1,0 +1,31 @@
+Total marks: 10
+
+Identification of Technology 2 Marks
+The student should clearly identify a modern technology project that uses Raspberry Pi.
+2 Marks: Technology is clearly identified, relevant, and innovative.
+1 Mark: Technology is identified but explanation is unclear or basic.
+0 Marks: Technology is not properly identified or unrelated.
+
+Explanation of Functionality - 3 Marks
+The answer should explain how the technology works and describe its functionality clearly.
+3 Marks: Functionality explained clearly with detailed understanding.
+2 Marks: Good explanation with minor missing details.
+1 Mark: Basic explanation with limited understanding.
+0 Marks: Incorrect or incomplete explanation.
+
+Technical Components Used - 2 Marks
+Students should mention hardware/software components and their functions.
+2 Marks: Components and their roles clearly explained.
+1 Mark: Some components mentioned with limited explanation.
+0 Marks: Components missing or incorrect.
+
+Applications and Practical Use - 2 Marks
+The answer should include real-world applications and benefits.
+2 Marks: Practical uses and benefits clearly explained.
+1 Mark: Applications mentioned briefly.
+0 Marks: No practical applications mentioned.
+
+Organization and Presentation - 1 Mark
+The answer should be neat, organized, and easy to understand.
+1 Mark: Well-structured and clearly presented.
+0 Marks: Poor organization and presentation.

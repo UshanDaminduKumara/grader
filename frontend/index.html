@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>AI Grading System</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="stylesheet" href="/static/style.css" />
+</head>
+<body>
+
+  <!-- ══════════════════════════════════════════════════
+       SCREEN 1 — DATA PREVIEW
+  ══════════════════════════════════════════════════ -->
+  <div id="screen-data" class="screen active">
+
+    <header class="top-bar">
+      <div class="logo">⬡ Shiksha-CoGrade</div>
+      <div id="load-badge" class="badge loading">
+        <span class="dot"></span> Loading dataset…
+      </div>
+    </header>
+
+    <!-- Question banner -->
+    <div class="question-banner">
+      <div class="q-label">EXAM QUESTION</div>
+      <div id="question-text" class="q-text skeleton-line"></div>
+    </div>
+
+    <!-- Main split layout -->
+    <div class="data-layout">
+
+      <!-- Left — Rubric -->
+      <aside class="rubric-card">
+        <div class="card-header">
+          <span class="icon">◈</span> Marking Rubric
+        </div>
+        <div id="rubric-text" class="rubric-body skeleton-block"></div>
+      </aside>
+
+      <!-- Right — Student table -->
+      <main class="table-card">
+        <div class="card-header">
+          <span class="icon">◉</span> Student Answers
+          <span id="student-count" class="count-badge">—</span>
+        </div>
+        <div class="table-wrap">
+          <table id="student-table">
+            <thead>
+              <tr>
+                <th>Std No</th>
+                <th>Answer</th>
+              </tr>
+            </thead>
+            <tbody id="student-tbody">
+              <!-- filled by JS -->
+            </tbody>
+          </table>
+        </div>
+      </main>
+    </div>
+
+    <div class="action-bar">
+      <button id="btn-grade" class="btn-primary" disabled onclick="startGrading()">
+        Start Grading
+      </button>
+    </div>
+  </div>
+
+
+  <!-- ══════════════════════════════════════════════════
+       SCREEN 2 — GRADING PROGRESS
+  ══════════════════════════════════════════════════ -->
+  <div id="screen-grading" class="screen">
+
+    <header class="top-bar">
+      <div class="logo">⬡ GradeAI</div>
+      <div class="badge running"><span class="dot pulse"></span> Grading in progress</div>
+    </header>
+
+    <div class="progress-center">
+      <div class="progress-card">
+        <div class="progress-title">AI Grading Pipeline</div>
+        <div class="progress-subtitle">Multi-agent system is evaluating student answers</div>
+
+        <div class="steps">
+
+          <div class="step" id="step-1">
+            <div class="step-icon pending">1</div>
+            <div class="step-info">
+              <div class="step-name">Data Initialized</div>
+              <div class="step-desc">Dataset, rubric and question loaded</div>
+            </div>
+            <div class="step-status" id="s1-status">—</div>
+          </div>
+
+          <div class="step-connector"></div>
+
+          <div class="step" id="step-2">
+            <div class="step-icon pending">2</div>
+            <div class="step-info">
+              <div class="step-name">AI Grading</div>
+              <div class="step-desc">Grader + Critic + Supervisor agents running</div>
+            </div>
+            <div class="step-status" id="s2-status">—</div>
+          </div>
+
+          <div class="step-connector"></div>
+
+          <div class="step" id="step-3">
+            <div class="step-icon pending">3</div>
+            <div class="step-info">
+              <div class="step-name">Saving Results</div>
+              <div class="step-desc">Writing results.csv to dataset folder</div>
+            </div>
+            <div class="step-status" id="s3-status">—</div>
+          </div>
+
+        </div>
+
+        <div id="progress-footer" class="progress-footer">Initializing…</div>
+      </div>
+    </div>
+  </div>
+
+
+  <!-- ══════════════════════════════════════════════════
+       SCREEN 3 — RESULTS
+  ══════════════════════════════════════════════════ -->
+  <div id="screen-results" class="screen">
+
+    <header class="top-bar">
+      <div class="logo">⬡ GradeAI</div>
+      <div class="badge done"><span class="dot"></span> Grading complete</div>
+    </header>
+
+    <div class="results-header">
+      <h1 class="results-title">Grading Results</h1>
+      <div id="results-meta" class="results-meta"></div>
+    </div>
+
+    <div class="results-wrap">
+      <table id="results-table">
+        <thead>
+          <tr>
+            <th>Std No</th>
+            <th>Mark <span class="th-sub">/ 10</span></th>
+            <th>Deductions / Feedback</th>
+          </tr>
+        </thead>
+        <tbody id="results-tbody">
+          <!-- filled by JS -->
+        </tbody>
+      </table>
+    </div>
+
+    <div class="action-bar">
+      <button class="btn-secondary" onclick="location.reload()">↩ Grade Again</button>
+    </div>
+  </div>
+
+  <script src="/static/app.js"></script>
+</body>
+</html>

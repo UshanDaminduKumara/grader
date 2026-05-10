@@ -1,0 +1,11 @@
+stdno,mark,lost_marks_reason
+bs026,8,"Technology is identified but not specifically named as a particular project or system, making it somewhat generic.; Explanation is detailed but lacks specific mention of a named project or unique innovation."
+bs075,7,"Technology is identified but explanation is somewhat basic and lacks depth in how components interact.; Some technical components mentioned but roles not fully explained, e.g., how Arduino and Raspberry Pi coordinate.; Practical applications mentioned but benefits are brief and not elaborated."
+bs163,9,"Minor missing details in technical components, e.g., specific sensors or modules not fully described.; Slight overemphasis on theoretical concepts rather than practical functionality."
+bs091,9,"Minor missing details in technical components, e.g., specific motor drivers or interface board not fully explained.; Slight lack of clarity in user interface description."
+bs099,9,"The answer is slightly lengthy and could be more concise, but overall well-organized."
+bs123,10,
+bs125,6,Technology identification is basic and lacks innovation (1/2).; Functionality explanation is general with limited detail (1/3).; No specific hardware/software components mentioned (0/2).; Applications mentioned briefly (1/2).
+ps088,2,No specific technology project identified (0/2).; No explanation of a complete system functionality (0/3).; Only lists components without describing a project (0/2).; No real-world application mentioned (0/2).; Poor organization and presentation (0/1).
+ps120,4,Technology identification is unclear and shifts from a smart doorbell to a stratosphere project without clear focus; Explanation of functionality is very brief and lacks detailed understanding; Technical components are listed but their roles are not explained; No real-world applications or benefits are mentioned; Answer is poorly organized and jumps between unrelated ideas
+ps128,9,"Minor missing details in the explanation of functionality, such as specific sensor integration or AI capabilities"
