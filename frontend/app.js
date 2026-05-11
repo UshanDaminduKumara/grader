@@ -1,3 +1,4 @@
+const API_BASE_URL = "http://127.0.0.1:8000";
 /* ═══════════════════════════════════════════════════
    SCREEN HELPERS
 ═══════════════════════════════════════════════════ */
@@ -17,7 +18,8 @@ function showScreen(id) {
 ═══════════════════════════════════════════════════ */
 async function loadData() {
   try {
-    const res  = await fetch("/load");
+    
+    const res = await fetch(`${API_BASE_URL}/load`);
     if (!res.ok) throw new Error(await res.text());
     const data = await res.json();
 
@@ -99,7 +101,7 @@ async function startGrading() {
 
   let gradeData;
   try {
-    const res = await fetch("/grade", { method: "POST" });
+    const res = await fetch(`${API_BASE_URL}/grade`, { method: "POST" });
     if (!res.ok) throw new Error(await res.text());
     gradeData = await res.json();
   } catch (err) {
