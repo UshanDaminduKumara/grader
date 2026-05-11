@@ -1,7 +1,18 @@
-fastapi==0.136.1
-uvicorn==0.46.0
+fastapi==0.110.0
+uvicorn[standard]==0.29.0
+
+# LangChain + LangGraph (compatible)
+langchain==0.3.7
+langchain-core==0.3.15
+langchain-community==0.3.3
+langgraph==0.2.34
+
+# DeepSeek
+deepseek==1.0.5
 langchain-deepseek==1.0.1
-langgraph==1.1.10
-langchain-core==1.3.3
-python-dotenv==1.2.2
-gunicorn==23.0.0
+
+# Utils
+python-dotenv==1.0.1
+httpx==0.27.2
+pydantic==2.9.2
+typing_extensions==4.15.0
