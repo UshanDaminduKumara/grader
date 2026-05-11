@@ -1,4 +1,4 @@
-const API_BASE_URL = "http://127.0.0.1:8000";
+const API_BASE_URL = "https://grader-b4h0azdvage4a5a5.southeastasia-01.azurewebsites.net/";
 /* ═══════════════════════════════════════════════════
    SCREEN HELPERS
 ═══════════════════════════════════════════════════ */
